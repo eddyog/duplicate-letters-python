@@ -1,12 +1,13 @@
-string = "welcome to the world of python programming";
-    
-print("Duplicate characters in a given string: ");  
-for i in range(0, len(string)):  
-    count = 1;  
-    for j in range(i+1, len(string)):  
-        if(string[i] == string[j] and string[i] != ' '):  
-            count = count + 1;  
-            string = string[:j] + '0' + string[j+1:];  
-    
-    if(count > 1 and string[i] != '0'):  
-        print(string[i]," - ",count)
+
+string = "Hello I am looking for an internship."
+
+print("The duplicate letters are the following ")
+for a in range(0, len(string)):
+    count = 1; 
+    for b in range(a+1, len(string)):
+        if(string[a] == string[b] and string[a] != ' '):
+            count = count + 1
+            string = string[:b] + '0' + string[b+1:]
+
+    if (count > 1 and string[a] != '0'):
+        print [string[a], "- ", count]
